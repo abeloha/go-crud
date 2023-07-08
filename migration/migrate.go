@@ -11,7 +11,7 @@ func init() {
 	initializer.LoadEnv()
 	initializer.ConnectToDB()
 }
-func main() {
+func migration() {
 	log.Println("Migrating...")
 	err := initializer.DB.AutoMigrate(&model.Post{})
 

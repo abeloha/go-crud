@@ -11,7 +11,7 @@ import (
 
 var DB *gorm.DB
 
-func ConnectToDB() {
+func ConnectToDB() *gorm.DB {
 
 	dbName := os.Getenv("DB_NAME")
 	dbUser := os.Getenv("DB_USER")
@@ -45,4 +45,6 @@ func ConnectToDB() {
 	if err != nil {
 		log.Fatal("Connecting to db failed", err)
 	}
+
+	return DB
 }
