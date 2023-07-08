@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/abeloha/go-crud/initializers"
+	"github.com/abeloha/go-crud/initializer"
 	"github.com/gin-gonic/gin"
 )
 

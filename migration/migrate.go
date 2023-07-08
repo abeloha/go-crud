@@ -3,8 +3,8 @@ package main
 import (
 	"log"
 
-	initializer "github.com/abeloha/go-crud/initializers"
-	model "github.com/abeloha/go-crud/models"
+	initializer "github.com/abeloha/go-crud/initializer"
+	model "github.com/abeloha/go-crud/model"
 )
 
 func init() {
