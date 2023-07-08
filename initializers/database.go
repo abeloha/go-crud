@@ -1,4 +1,4 @@
-package initializers
+package initializer
 
 import (
 	"fmt"
@@ -37,7 +37,10 @@ func ConnectToDB() {
 
 	var err error
 	dsn := fmt.Sprintf("host=%s user=%s password=%s dbname=%s port=%s sslmode=disable", dbHost, dbUser, dbPassword, dbName, dbPort)
+
+	log.Println("Connecting to database...")
 	DB, err = gorm.Open(postgres.Open(dsn), &gorm.Config{})
+	log.Println("Done...")
 
 	if err != nil {
 		log.Fatal("Connecting to db failed", err)

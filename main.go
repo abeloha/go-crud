@@ -8,8 +8,8 @@ import (
 )
 
 func init() {
-	initializers.LoadEnv()
-	initializers.ConnectToDB()
+	initializer.LoadEnv()
+	initializer.ConnectToDB()
 }
 func main() {
 	fmt.Println("Hello, World!")
